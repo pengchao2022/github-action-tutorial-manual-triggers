@@ -31,7 +31,9 @@ jobs:
           free -h
           echo "display the current path"
           pwd
-          
+          echo "Display the CPU info"
+          grep -c ^processor /proc/cpuinfo
+          echo "CPU cores: $(nproc)"
 
 
 
