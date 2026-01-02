@@ -21,7 +21,15 @@ jobs:
           echo "this it the second line"
           echo "display system process info"
           ps aux
-          ls
+          echo "display the filesystem"
+          ls -l
+          echo "display the linux version"
+          uname -a
+          echo "display the storage info"
+          df -h
+          echo "display the memory info"
+          free -a
+          
 
 
 
