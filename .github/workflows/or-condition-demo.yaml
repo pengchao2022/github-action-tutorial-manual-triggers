@@ -1,0 +1,9 @@
+name: Or Conditional demo
+on: push
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run for pengchao2022 or lily2025
+        if: github.actor == 'pengchao2022' || github.actor == 'lily2025'
+        run: echo "It is triggered by ether Pengchao2022 or Lily2025"
