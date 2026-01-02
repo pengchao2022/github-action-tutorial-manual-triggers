@@ -11,8 +11,9 @@ jobs:
 
       - name: Print all variables in github
         run: echo "${{ toJson(github) }}"
-
+      
+      # 打印所有环境变量
       - name: Print environment variables
         run: printenv
 
-        
+
