@@ -16,3 +16,6 @@ jobs:
 
       - name: Run another step
         run: echo "This step is running..."
+
+      - name: Run developer step
+        run: echo "just for a test"
