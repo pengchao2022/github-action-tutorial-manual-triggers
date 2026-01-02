@@ -39,6 +39,8 @@ jobs:
   build:
     # job 必须要有 runs-on 
     runs-on: ubuntu-latest
+    # 依赖关系，如： 依赖检查系统信息之后
+    needs: check_runner_system_info
     steps:
       - name: build docker image
         run: echo "we are building the docker image currently"
