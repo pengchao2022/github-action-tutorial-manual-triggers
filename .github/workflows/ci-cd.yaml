@@ -8,7 +8,7 @@
 name: Display github actions tutorial for beginners using
 on: workflow_dispatch
 jobs:
-  hello:
+  check_runner_system_info:
     runs-on: ubuntu-latest
     steps:
       # 这个是运行一行命令
