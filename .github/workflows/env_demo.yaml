@@ -1,15 +1,18 @@
 # 这是一个练习环境变量的 workflow
 name: Env Demo
 on: workflow_dispatch
+# 全局 环境变量
 env:
   APP_ENV: "dev"
 jobs:
   env_demo:
+    # Job 级别环境变量
     env: 
       APP_ENV: "test"
     runs-on: ubuntu-latest
     steps:
       - name: Connecting to Env
+        # 步骤 step 级别环境变量
         env:
           APP_ENV: "stage view"
         run: echo "App is connecting to $APP_ENV"
