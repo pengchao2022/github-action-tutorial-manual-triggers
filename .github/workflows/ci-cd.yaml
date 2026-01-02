@@ -1,8 +1,27 @@
+# ============ Designed by pengchao ma and this is for beginners =============
+# ============ 多行注释练习 =========
+# ============ author: pengchao ==========
+# ============ date: 2026/02/02 ==========
+
+
+
 name: Display Hello World
 on: workflow_dispatch
 jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
+      # 这个是运行一行命令
       - name: hello kitty
         run: echo "Hello kitty and Hello world!"
+      # 这个是运行多行命令
+      - name: run multiple command lines
+        run: |
+          echo "this is the first line"
+          echo "this it the second line"
+          top
+          ls
+          
+
+
+
