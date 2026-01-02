@@ -5,7 +5,7 @@
 
 
 
-name: Display Hello World
+name: Display github actions tutorial for beginners using
 on: workflow_dispatch
 jobs:
   hello:
