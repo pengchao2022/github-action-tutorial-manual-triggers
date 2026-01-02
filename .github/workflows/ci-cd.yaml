@@ -37,7 +37,7 @@ jobs:
 
   # 第二个 build job
   build:
-    # jon 必须要有 runs-on 
+    # job 必须要有 runs-on 
     runs-on: ubuntu-latest
     steps:
       - name: build docker image
