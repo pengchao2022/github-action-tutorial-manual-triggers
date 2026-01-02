@@ -28,8 +28,11 @@ jobs:
           echo "display the storage info"
           df -h
           echo "display the memory info"
-          free -a
+          free -h
+          echo "display the current path"
+          pwd
           
+
 
 
 
