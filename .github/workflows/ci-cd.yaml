@@ -46,10 +46,19 @@ jobs:
   # 另外一个 test job
   test:
     runs-on: ubuntu-latest
+    # job 之间的依赖关系，如 test job 需要在 build job 完成之后运行
+    needs: build
     steps:
       - name: test the docker image
         run: echo "we are testing the docker image currently"
 
+  # deploy
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: we are deploy to EKS
+        run: echo "we are deploy the image to AWS EKS"
 
 
 
