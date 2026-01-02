@@ -1,0 +1,11 @@
+# 这是一个练习环境变量的 workflow
+name: Env Demo
+on: workflow_dispatch
+env:
+  APP_ENV: "dev"
+jobs:
+  env_demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Connecting to Env
+        run: echo "App is connecting to $APP_ENV"

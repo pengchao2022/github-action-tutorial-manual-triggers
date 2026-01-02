@@ -64,6 +64,11 @@ jobs:
         run: echo "we are deploy the image to AWS EKS"
 
 
+  # env variables 练习
+
+  
+  
+
 
 
 
