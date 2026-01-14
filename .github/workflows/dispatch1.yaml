@@ -1,0 +1,13 @@
+name: ping google.com
+on: workflow_dispatch
+jobs:
+  ping-google:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install ping command
+        run: |
+          sudo apt install iputils-ping
+          ping www.google.com
+
+          
+  
