@@ -7,7 +7,7 @@ jobs:
       - name: Install ping command
         run: |
           sudo apt install iputils-ping
-          ping www.google.com
+          ping -c 5 www.google.com
 
           
   
